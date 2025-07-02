@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artemis Lunar Mission | SpaceTech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<style>
+
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0b0f2b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #111842;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  color: #00d1ff;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d1ff;
+}
+
+/* Clearfix */
+header .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Artemis Banner */
+.artemis-banner {
+ 
+  background: url(images/Lunar.png) no-repeat center center/cover;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.artemis-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.artemis-banner .banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Page Content Styling */
+.content-section {
+  background-color: #1a1f4a;
+  color: #eee;
+  padding: 60px 20px;
+}
+.content-section h3 {
+  color: #00d1ff;
+  margin-top: 40px;
+}
+.content-section p, .content-section li {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.full-width-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+</style>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">SpaceTech</h1>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home </a></li>
+          <li><a href="Index.html">Missions</a></li>
+          <li><a href="Index.html">Technology</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner artemis-banner">
+    <div class="banner-content">
+      <h2>Artemis Lunar Mission</h2>
+      <p>Establishing a sustainable human presence on the Moon as a stepping stone to Mars.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h3>About the Mission</h3>
+      <p>
+        The <strong>Artemis Program</strong> is NASA’s ambitious effort to return astronauts to the Moon and establish a long-term presence. The mission aims to land the first woman and the first person of color on the lunar surface, using advanced technologies and global partnerships.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1603720222955-bd7e1c187a3a" alt="Artemis Moon Surface" class="full-width-img" />
+
+      <h3>Mission Goals</h3>
+      <ul>
+        <li>Land the first woman and next man on the Moon</li>
+        <li>Explore the lunar South Pole for water ice and minerals</li>
+        <li>Test deep space technologies for future Mars missions</li>
+        <li>Establish a sustainable human presence on the Moon</li>
+      </ul>
+
+      <h3>Mission Timeline</h3>
+      <ul>
+        <li><strong>Artemis I (2022):</strong> Uncrewed test flight around the Moon</li>
+        <li><strong>Artemis II (2025):</strong> First crewed flight to lunar orbit</li>
+        <li><strong>Artemis III (2026):</strong> First human landing on the Moon since Apollo</li>
+      </ul>
+
+      <h3>Technology & Spacecraft</h3>
+      <p>The Artemis mission uses cutting-edge systems:</p>
+      <ul>
+        <li><strong>Orion spacecraft</strong>: Carries astronauts from Earth to the Moon</li>
+        <li><strong>Space Launch System (SLS)</strong>: The most powerful rocket ever built</li>
+        <li><strong>Gateway station</strong>: Lunar orbital base for long-term exploration</li>
+        <li><strong>Next-gen EVA suits</strong>: Designed for mobility on the lunar surface</li>
+      </ul>
+
+      <img src="https://images.unsplash.com/photo-1543946603-0e7a6c1d4431" alt="SLS Rocket Artemis" class="full-width-img" />
+
+      <h3>International Collaboration</h3>
+      <p>
+        Artemis is a global mission involving partners like:
+        <ul>
+          <li><strong>ESA (Europe)</strong></li>
+          <li><strong>JAXA (Japan)</strong></li>
+          <li><strong>CSA (Canada)</strong></li>
+        </ul>
+        Together, they contribute modules, robotics, and astronaut participation, building a sustainable path to future Mars missions.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SpaceTech Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

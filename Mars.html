@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mars Rover Alpha | SpaceTech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <style>
+
+         /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0b0f2b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #111842;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  color: #00d1ff;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d1ff;
+}
+
+/* Clearfix */
+header .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+    
+    
+    /* Mars Rover Alpha Banner */
+.mars-banner {
+  background: url(images/mars.jpg) no-repeat center center/cover;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.mars-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.mars-banner .banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Mars Page Styling */
+.content-section {
+  background-color: #1a1f4a;
+  color: #eee;
+  padding: 60px 20px;
+}
+.content-section h3 {
+  color: #00d1ff;
+  margin-top: 40px;
+}
+.content-section p, .content-section li {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.full-width-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+</style>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">SpaceTech</h1>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home </a></li>
+          <li><a href="Index.html">Missions</a></li>
+          <li><a href="Index.html">Technology</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+  
+  <section class="banner mars-banner">
+    <div class="banner-content">
+      <h2>Mars Rover Alpha</h2>
+      <p>Exploring the Martian surface with intelligence and precision.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h3>Mission Overview</h3>
+      <p>
+        <strong>Mars Rover Alpha</strong> is a cutting-edge robotic mission aimed at exploring the surface of Mars. Designed to search for signs of ancient life, collect samples, and test new exploration technologies, Rover Alpha represents a major step in preparing for future human missions to the Red Planet.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1617531653332-bc593b7b7ac5" alt="Mars Rover" class="full-width-img" />
+
+      <h3>Mission Objectives</h3>
+      <ul>
+        <li>Search for biosignatures in ancient Martian rocks</li>
+        <li>Collect and store soil samples for Earth return</li>
+        <li>Test terrain navigation with AI systems</li>
+        <li>Demonstrate oxygen production from CO<sub>2</sub></li>
+      </ul>
+
+      <h3>Timeline</h3>
+      <ul>
+        <li><strong>Launch:</strong> July 2026</li>
+        <li><strong>Landing:</strong> February 2027 in Jezero Crater</li>
+        <li><strong>Primary mission duration:</strong> 2 Martian years (~4 Earth years)</li>
+      </ul>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Autonomous Navigation:</strong> AI-assisted driving and terrain mapping</li>
+        <li><strong>Sample Caching System:</strong> Stores rock and soil samples for future return</li>
+        <li><strong>MOXIE 2.0:</strong> Produces oxygen from Martian atmosphere</li>
+        <li><strong>360° Panoramic Camera Suite:</strong> High-res imagery and analysis</li>
+      </ul>
+
+      <img src="https://images.unsplash.com/photo-1601455763557-973dc11b4072" alt="Mars Landscape" class="full-width-img" />
+
+      <h3>Scientific Discoveries</h3>
+      <p>
+        Mars Rover Alpha is already uncovering signs of past water flow and mineral formations consistent with microbial life. The mission paves the way for future astronauts to study these findings in person.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SpaceTech Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

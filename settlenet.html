@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StellerNet Satellites | SpaceTech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <style>
+
+      /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0b0f2b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #111842;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  color: #00d1ff;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00d1ff;
+}
+
+/* Clearfix */
+header .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        /* StellerNet Banner */
+.stellernet-banner {
+  background: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2') no-repeat center center/cover;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.stellernet-banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.stellernet-banner .banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Common Section Styling */
+.content-section {
+  background-color: #1a1f4a;
+  color: #eee;
+  padding: 60px 20px;
+}
+.content-section h3 {
+  color: #00d1ff;
+  margin-top: 40px;
+}
+.content-section p, .content-section li {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.full-width-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+
+---
+
+🔗 Link to stellernet.html in missions.html
+
+Update your missions card section:
+
+<div class="mission-card">
+  <a href="stellernet.html">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="StellerNet Satellite">
+    <div class="card-content">
+      <h3>StellerNet Satellites</h3>
+      <p>High-speed space-based internet for everyone →</p>
+    </div>
+  </a>
+</div>
+
+    </style>
+   <header>
+    <div class="container">
+      <h1 class="logo">SpaceTech</h1>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home </a></li>
+          <li><a href="Index.html">Missions</a></li>
+          <li><a href="Index.html">Technology</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+  <section class="banner stellernet-banner">
+    <div class="banner-content">
+      <h2>StellerNet Satellites</h2>
+      <p>Global connectivity powered by space-based internet.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h3>About StellerNet</h3>
+      <p>
+        <strong>StellerNet</strong> is a next-generation satellite constellation launched by SpaceTech to deliver fast, secure, and low-latency internet across every corner of the planet — from urban cities to remote deserts and oceans.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Satellite Constellation" class="full-width-img" />
+
+      <h3>Mission Objectives</h3>
+      <ul>
+        <li>Establish a low-Earth orbit (LEO) satellite network for global coverage</li>
+        <li>Connect underserved regions with reliable broadband</li>
+        <li>Provide secure, real-time communications for disaster recovery</li>
+        <li>Support IoT, autonomous systems, and AI-based smart networks</li>
+      </ul>
+
+      <h3>Network Design</h3>
+      <p>
+        StellerNet includes over <strong>3,000 interconnected LEO satellites</strong> forming a resilient mesh network. Each satellite features advanced beam-forming antennas, autonomous orbital correction, and laser inter-satellite communication.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="StellerNet Coverage" class="full-width-img" />
+
+      <h3>Launch Timeline</h3>
+      <ul>
+        <li><strong>Phase 1 (2024):</strong> Initial 300 satellites launched and deployed</li>
+        <li><strong>Phase 2 (2025):</strong> Expanded coverage with 1,200 satellites</li>
+        <li><strong>Phase 3 (2026-2027):</strong> Global coverage with 3,000+ satellites</li>
+      </ul>
+
+      <h3>Global Benefits</h3>
+      <ul>
+        <li>High-speed internet in remote and rural regions</li>
+        <li>Low-latency cloud gaming, streaming, and remote work</li>
+        <li>Emergency communication during disasters</li>
+        <li>Reduced digital divide across the globe</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SpaceTech Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
